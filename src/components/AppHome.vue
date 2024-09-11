@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
             <div class=" d-flex gap-2 flex-wrap">
-                <div v-for="character in characters" :key="character">
-                    <div class="card col-3">
+                
+                    <div class="card col-3" v-for="character in characters" :key="character">
                         <div class="card-title text-warning">{{ character.name }}</div>
                         <div class="card-body">{{ character.description }}</div>
                     </div>
-                </div>
+           
             </div>
         </div>
     </div>
